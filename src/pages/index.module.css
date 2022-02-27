@@ -8,14 +8,18 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  flex: 1 0 auto;
 }
 
 @media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 .buttons {
   display: flex;
   align-items: center;

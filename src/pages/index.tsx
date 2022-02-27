@@ -1,27 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
-import HomepageFeatures from "../components/HomepageFeatures";
 import Profile from "/img/peep.svg";
+
 function HomepageHeader() {
+  useEffect(() => {
+    const mainWrapper = document.querySelector<HTMLDivElement>(".main-wrapper");
+    mainWrapper.style.alignItems = "center";
+
+    return function cleanUp() {
+      mainWrapper.style.alignItems = "";
+    };
+  }, []);
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("", styles.heroBanner)}>
-      <div className="container">
+    <header className={clsx("flex", styles.heroBanner)}>
+      <div className="mt-auto container">
         <h1 className="">안녕하세요! 금교영입니다</h1>
-        <p className="">{siteConfig.tagline}</p>
+        <p className="">This is my TIL storage and Blog</p>
         <div>
           <Profile></Profile>
         </div>
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            Docusaurus Tutorial - 5min ⏱️
+          <Link className="button button--secondary button--lg" to="/blog">
+            글 보러가기 📖
           </Link>
         </div>
       </div>

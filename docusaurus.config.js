@@ -22,6 +22,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: "docs",
+          path: "docs",
+          lastVersion: "current",
           sidebarPath: require.resolve("./sidebars.js"),
           beforeDefaultRemarkPlugins: [sectionPrefix],
           // Please change this to your repo.
@@ -48,23 +51,35 @@ const config = {
       autoCollapseSidebarCategories: true,
       hideableSidebar: true,
       navbar: {
-        title: "Kyo Blog",
+        title: "Kyo-Young",
         // logo: {
         //   alt: "My Site Logo",
         //   src: "img/avatar.svg",
         // }
         items: [
+          { to: "/blog", label: "Blog", position: "left" },
+          {
+            to: "/language/intro", // ./docs-api/Intro.md
+            label: "Language",
+            position: "left",
+            activeBaseRegex: `/language/`,
+          },
+          {
+            to: "/react-tutorial/intro", // ./docs-system/Intro.md
+            label: "React Tutorial",
+            position: "left",
+            activeBaseRegex: `/react-tutorial/`,
+          },
+          {
+            href: "https://github.com/youngkyo0504",
+            label: "GitHub",
+            position: "right",
+          },
           {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
+            label: "ETC",
           },
         ],
       },
@@ -118,6 +133,27 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "language",
+        path: "language",
+        routeBasePath: "language",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "react-tutorial",
+        path: "react-tutorial",
+        routeBasePath: "react-tutorial",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ],
+  ],
 };
 
 module.exports = config;
