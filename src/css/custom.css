@@ -3,17 +3,18 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
- @import url('https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.2.1/static/pretendard.css');
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.2.1/static/pretendard.css");
+@import url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css");
 .main-wrapper {
   display: flex;
   justify-content: center;
 }
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-font-family-base: font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-  "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-  "Malgun Gothic", sans-serif;
+  --ifm-font-family-monospace: Hack, monospace;
+  --ifm-font-family-base: Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", sans-serif;
   --nord0: #2e3440; /*dark1*/
   --nord1: #3b4252; /*dark2*/
   --nord2: #434c5e; /*dark3*/
