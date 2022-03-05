@@ -3,11 +3,17 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url("https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.2.1/static/pretendard.css");
 @import url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css");
 .main-wrapper {
   display: flex;
   justify-content: center;
+}
+html {
+  font-family: var(--ifm-font-family-base);
 }
 /* You can override the default Infima variables here. */
 :root {
@@ -64,7 +70,7 @@
   --theme_dark--code_number: var(--theme_dark--text_purple);
   --theme_dark--code_string: var(--theme_dark--text_orange);
   --theme_dark--code_attr-value: var(--theme_dark--text_orange);
-
+  --ifm-tabs-color-active: var(--nord11);
   --ifm-color-primary: #fff;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -77,9 +83,16 @@
   --ifm-code-background: rgb(236, 239, 244);
   --ifm-hero-text-color: #4c566a;
   --ifm-menu-color-active: var(--nord10);
+  --ifm-color-danger-dark: var(--nord12);
+  --ifm-color-secondary-dark: var(--nord15);
+  --ifm-color-info-dark: var(--nord10);
+  --ifm-color-warning-dark: var(--nord13);
   --ifm-button-background-color: rgb(246, 248, 250);
   --ifm-footer-background-color: #fff;
-  --ifm-link-color: var(var(--nord14));
+  --ifm-link-color: var(--nord14);
+  --ifm-alert-border-color: var(--nord14);
+  --ifm-color-success-dark: var(--nord14);
+
   /* --collapse-button-bg-color-dark */
   /* rgb(57, 58, 52) */
 }
@@ -135,13 +148,23 @@ code {
 }
 
 /* alrets  */
-.alert--danger {
-  /* background-color: var(--nord11); */
+html[data-theme="dark"] .alert--secondary {
+  background-color: var(--nord15);
+}
+html[data-theme="dark"] .alert--danger {
+  background-color: var(--nord12);
+}
+html[data-theme="dark"] .alert--info {
+  background-color: var(--nord10);
 }
 
-.alert--success {
-  background-color: #80b94d;
+html[data-theme="dark"] .alert--success {
+  background-color: var(--nord14);
 }
+html[data-theme="dark"] .alert--warning {
+  background-color: var(--nord13);
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 /* html[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
@@ -163,4 +186,96 @@ code {
 /* 컨테이너 패딩 */
 .padding-top--md {
   padding-top: 3rem !important;
+}
+
+.row {
+}
+
+/* 블로그 글 margin 0  */
+.row .col.col--9 {
+  --ifm-col-width: 50rem;
+  margin: 0 auto;
+}
+.row .col.col--offset-1 {
+}
+.row .col[class*="col--"] {
+  max-width: 82rem;
+}
+
+/* 마크다운 */
+.markdown {
+  font-size: 1.1rem;
+}
+
+.markdown h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: 1em;
+}
+.markdown h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+.markdown h1 {
+  font-size: 2.5em;
+}
+.markdown h2 {
+  font-size: 2em;
+}
+.markdown h3 {
+  font-size: 1.5em;
+}
+.markdown h4 {
+  font-size: 1.2em;
+}
+.markdown h5 {
+  font-size: 1em;
+}
+.markdown h6 {
+  font-size: 0.9em;
+}
+
+.markdown hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #eee;
+  margin: 1em 0;
+  padding: 0;
+}
+.markdown b,
+strong {
+  font-weight: bold;
+}
+
+.markdown sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown sup {
+  top: -0.5em;
+}
+.markdown sub {
+  bottom: -0.25em;
+}
+.markdown li {
+  list-style: inside;
+}
+.markdown a {
+  color: var(--nord7);
+}
+.markdown code {
+  font-family: var(--ifm-font-family-monospace);
+}
+.markdown code {
+  font-size: 1rem;
 }

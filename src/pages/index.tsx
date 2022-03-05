@@ -5,7 +5,6 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import Profile from "/img/peep.svg";
-
 function HomepageHeader() {
   useEffect(() => {
     const mainWrapper = document.querySelector<HTMLDivElement>(".main-wrapper");
@@ -19,9 +18,9 @@ function HomepageHeader() {
   return (
     <header className={clsx("flex", styles.heroBanner)}>
       <div className="mt-auto container">
-        <h1 className="">안녕하세요! 금교영입니다</h1>
-        <p className="">This is my TIL storage and Blog</p>
-        <div>
+        <h1 className="text-2xl font-bold">안녕하세요! 금교영입니다</h1>
+        <p className="text-lg">This is my TIL storage and Blog</p>
+        <div className="flex justify-center items-center">
           <Profile></Profile>
         </div>
         <div className={styles.buttons}>
