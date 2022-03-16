@@ -193,18 +193,20 @@ html[data-theme="dark"] .alert--warning {
 
 /* 블로그 글 margin 0  */
 .row .col.col--9 {
-  --ifm-col-width: 50rem;
+  /* --ifm-col-width: 50rem; */
   margin: 0 auto;
 }
 .row .col.col--offset-1 {
 }
 .row .col[class*="col--"] {
-  max-width: 82rem;
+  /* max-width: 82rem; */
 }
 
 /* 마크다운 */
 .markdown {
   font-size: 1.1rem;
+  margin: 0 auto;
+  max-width: 56.25rem;
 }
 
 .markdown h1,
