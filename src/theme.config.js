@@ -5,12 +5,13 @@
 export default {
   banner: {
     key: "Nextra 2",
-    text: "안녕하세요",
+    text: "Nextra 2 Alpha",
   },
   docsRepositoryBase:
     "https://github.com/shuding/nextra/blob/core/examples/docs",
-  editLink: false,
-
+  editLink: {
+    text: "Edit this page on GitHub",
+  },
   head: () => (
     <>
       <meta name="msapplication-TileColor" content="#ffffff" />
@@ -58,5 +59,8 @@ export default {
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     </>
   ),
+  projectChat: {
+    link: "https://discord.gg/hEM84NMkRv", // Next.js discord server,
+  },
   unstable_faviconGlyph: "✦",
 };
