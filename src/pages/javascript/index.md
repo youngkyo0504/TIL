@@ -1,8 +1,5 @@
 ---
-title: "test 2222"
+title: "hey"
 slug: "javascript"
 ---
 
-
-# 하이하이
-안녕하세요!
