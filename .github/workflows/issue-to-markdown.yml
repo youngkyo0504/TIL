@@ -14,7 +14,7 @@ jobs:
       - uses: eunjae-lee/issue-to-markdown@v1
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          dest: "src/pages/javascript"
+          dest: "src/pages"
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "docs: update contents"
