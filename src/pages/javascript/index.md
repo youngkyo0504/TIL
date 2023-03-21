@@ -4,8 +4,5 @@ slug: "javascript"
 ---
 
 
-# 하이하이
-**안녕하세요**!
+이게 이상한기 ![Screenshot_20230313-201107_YouTube.jpg](./226762223-2fdc1e0e-1614-4ddb-8306-15b0c3b1122c.jpg)
 
-NMIXX "Love Me Like This" M/V / JYP Entertainment
-https://www.youtube.com/watch?v=EDnwWcFpObo
