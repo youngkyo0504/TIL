@@ -12,6 +12,6 @@ full_path: "src/pages/tool/shottr.md"
   - 해당 포인터에서 가리키는 색을 카피한다. 
 
 - toolbar 
-<img width="613" alt="image" src="https://user-images.githubusercontent.com/78121870/230778179-c102f4e3-8943-4c48-9377-6f02b9ee14ee.png">
+<img width="613" alt="image" src="https://user-images.githubusercontent.com/78121870/230778179-c102f4e3-8943-4c48-9377-6f02b9ee14ee.png"/>
 
  
