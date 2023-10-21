@@ -3,6 +3,9 @@ title: "스틱"
 full_path: "src/pages/book/stick.md"
 ---
 
+
+# 스틱
+
 <img src='https://github.com/youngkyo0504/TIL/assets/78121870/e5307246-7482-4e3d-93d6-c658deb0eed3'/>
 
 ## 어떤 이야기가 기억되는가?
