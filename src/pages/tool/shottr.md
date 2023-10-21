@@ -3,6 +3,9 @@ title: "Shottr 사용법"
 full_path: "src/pages/tool/shottr.md"
 ---
 
+
+# Shottr
+
 - 드래그 한 상태로 
   - `A`를 누르면 영역을 보기좋게 잘라준다.  
   - `Enter`를 누르면 영역을 보기좋게 잘라준다.
