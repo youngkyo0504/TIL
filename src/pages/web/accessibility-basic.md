@@ -3,6 +3,8 @@ title: "접근성 기초"
 full_path: "src/pages/web/accessibility-basic.md"
 ---
 
+
+# 접근성 기초
 - 브라우저는 접근성 트리를 만든다. 
 - 버튼에 접근성 이름이 없으면 자식요소들의 이름을 모은다.
   - 만약 버튼 안에 이미지가 있으면 alt를 가져온다. 
