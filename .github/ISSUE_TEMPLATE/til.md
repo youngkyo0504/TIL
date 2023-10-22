@@ -7,7 +7,8 @@ assignees: ''
 
 ---
 
+템플릿 예시입니다.
 ---
 title:
-full_path: src/pages/
+full_path: src/pages/.md
 ---
