@@ -6,7 +6,7 @@ full_path: "src/pages/book/stick.md"
 
 # 스틱
 
-<img src='https://github.com/youngkyo0504/TIL/assets/78121870/e5307246-7482-4e3d-93d6-c658deb0eed3'/>
+<img src='https://github.com/youngkyo0504/TIL/assets/78121870/e5307246-7482-4e3d-93d6-c658deb0eed3.png'/>
 
 ## 어떤 이야기가 기억되는가?
 어떤 이야기는 기억에 잘 남지만 어떤 이야기는 기억에 남지 않는다. 잘 기억에 남고 책에서는 사람들의 뇌에 달라붙는 메시지를 스티커 메시지라고 한다.
