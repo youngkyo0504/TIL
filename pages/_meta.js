@@ -4,5 +4,6 @@ export default {
     tool: 'Tool',
     investment: 'Investment',
     infra: 'Infra',
+    iOS: 'iOS',
     ['computer-structure'] : 'Computer Structure'
   }
